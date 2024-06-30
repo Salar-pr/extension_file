@@ -1,0 +1,15 @@
+import os
+import glob
+
+
+
+file_list = glob.glob('*')
+
+my_set =set()
+
+for each_file in file_list:
+    extension = each_file.split('.')[1]
+    my_set.add(extension)
+
+
+print(my_set)
